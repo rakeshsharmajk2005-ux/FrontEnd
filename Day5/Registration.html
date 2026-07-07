@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>form</title>
+  <style>
+    #first {
+      height: 100vh;
+      width: 100%;
+      /* border:1px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #second {
+      height: 600px;
+      width: 500px;
+      background: rgba(109, 159, 206, 0.2);
+      border: 1px solid black;
+      text-align: center;
+      border-radius: 80px;
+      box-shadow: 10px 15px 3px rgb(40, 40, 101);
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    #reg {
+      width: 100%;
+      height: 100vh;
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    #sub {
+      width: 80%;
+      height: 30px;
+      border-radius: 20px;
+      background-color: rgb(64, 64, 236);
+
+    }
+
+    #sub:hover {
+      background-color: blue;
+    }
+
+    #re {
+      width: 80%;
+      height: 30px;
+      border-radius: 20px;
+      ;
+      background-color: rgb(64, 64, 236);
+    }
+
+    #button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="first">
+    <div id="second">
+      <form action="#reg">
+        <h2>Registration form</h2>
+        <label for="Name" class="red">Name :</label>
+        <input type="text" id="Name" required placeholder="Enter Your Name" />
+        <br><br>
+
+        <label for="reg_no">Registor Number :</label>
+        <input type="text" id="reg_no" required placeholder="Enter Your RegistorNumber" />
+        <br><br>
+
+        <label for=email class="red">Email :</label>
+        <input type="email" id="email" required placeholder="Enter Your Mail Id" />
+        <br><br>
+
+        <label for="Age" class="red"> Age :</label>
+        <input type="number" required id="Age" placeholder="Enter Your Age" />
+        <br><br>
+
+        <label for="DOB">DOB</label>
+        <input type="date" required id="DOB" />
+        <br><br>
+        <label for="Phone_number" class="red">Phone Number :</label>
+        <input type="tel" id="Phone_number" required placeholder="Enter Your PhoneNumber" minlength="10"
+          maxlength="10" />
+        <br><br>
+
+        <label for="dep"> Department :</label>
+        <select id="dep" style="color:rgb(28, 70, 239)">
+          <option>--Select Your Dept--</option>
+          <option>IT</option>
+          <option>CSE</option>
+          <option>AIDS</option>
+          <option>AIML</option>
+          <option>ECE</option>
+        </select>
+        <br><br>
+
+        <div class="red">
+          <label>Gender :</label>
+          <label>Male</label>
+          <input type="radio" name="gender" value="Male" />
+          <label>Female</label>
+          <input type="radio" name="gender" value="Female" />
+          <br><br>
+
+        </div>
+        <label for="c">choose te resume :</label>
+        <input type="file" id="c" />
+        <br><br>
+        <label for="about">about</label>
+        <input id="about" type="range" /><br><br>
+
+
+        <!-- <input type="submit" id="sub"/> -->
+        <div id="button">
+          <button action="submit" id="sub">submit</button>
+
+          <button action="reset" id="re">clear</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="reg">
+
+    <h2>Registration Completed </h2>
+    <pre>      <b><u>terms and condition </u></b> you agree to Terms of Service and Privacy Policy, which govern the use of its products and services.
+            You consent to processing your information as described in these policies.</pre>
+
+  </div>
+</body>
+</body>
+
+</html>
