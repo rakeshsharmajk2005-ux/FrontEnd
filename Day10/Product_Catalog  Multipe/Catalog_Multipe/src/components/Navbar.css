@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  color: white;
+  padding: 15px 60px;
+}
+
+.logo {
+  font-size: 28px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: gold;
+}

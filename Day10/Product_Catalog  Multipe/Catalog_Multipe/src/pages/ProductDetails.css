@@ -1,0 +1,39 @@
+.details{
+    display:flex;
+    gap:50px;
+    width:80%;
+    margin:50px auto;
+    align-items:center;
+}
+
+.details img{
+    width:400px;
+    border-radius:12px;
+}
+
+.details h1{
+    margin-bottom:15px;
+}
+
+.details h2{
+    color:#1565c0;
+    margin:15px 0;
+}
+
+.details p{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.details button{
+    padding:12px 25px;
+    border:none;
+    background:#1565c0;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.details button:hover{
+    background:#0d47a1;
+}
