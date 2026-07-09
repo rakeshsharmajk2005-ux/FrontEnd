@@ -1,0 +1,111 @@
+.departments{
+    padding:25px;
+    background:#f5f6fa;
+    min-height:100vh;
+}
+
+.department-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.department-header h1{
+    color:#333;
+    margin-bottom:6px;
+}
+
+.department-header p{
+    color:#777;
+}
+
+.add-department-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#5B5CEB;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-department-btn:hover{
+    background:#4849d9;
+}
+
+.department-table{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    overflow-x:auto;
+}
+
+.department-table table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.department-table thead{
+    background:#5B5CEB;
+    color:white;
+}
+
+.department-table th{
+    padding:15px;
+    text-align:left;
+}
+
+.department-table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+.department-table tr:hover{
+    background:#f9f9ff;
+}
+
+.edit-btn{
+    background:#5B5CEB;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    margin-right:8px;
+    cursor:pointer;
+}
+
+.edit-btn:hover{
+    background:#4849d9;
+}
+
+.delete-btn{
+    background:#EF4444;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#d93636;
+}
+
+@media(max-width:768px){
+
+.department-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.department-table{
+    overflow-x:auto;
+}
+
+}

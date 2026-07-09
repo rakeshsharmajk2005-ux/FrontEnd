@@ -1,0 +1,93 @@
+.employee-table-container{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    overflow-x:auto;
+}
+
+.employee-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.employee-table thead{
+    background:#5B5CEB;
+    color:white;
+}
+
+.employee-table th{
+    padding:15px;
+    text-align:left;
+    font-size:15px;
+}
+
+.employee-table td{
+    padding:15px;
+    border-bottom:1px solid #ececec;
+    font-size:14px;
+}
+
+.employee-table tbody tr:hover{
+    background:#f8f9ff;
+}
+
+.status{
+    padding:6px 15px;
+    border-radius:20px;
+    color:white;
+    font-size:13px;
+    font-weight:600;
+}
+
+.active{
+    background:#22C55E;
+}
+
+.inactive{
+    background:#EF4444;
+}
+
+.edit-btn{
+    background:#5B5CEB;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    margin-right:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.edit-btn:hover{
+    background:#494ad4;
+}
+
+.delete-btn{
+    background:#EF4444;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#d93636;
+}
+
+@media(max-width:768px){
+
+.employee-table th,
+.employee-table td{
+    font-size:13px;
+    padding:12px;
+}
+
+.edit-btn,
+.delete-btn{
+    padding:6px 10px;
+}
+
+}

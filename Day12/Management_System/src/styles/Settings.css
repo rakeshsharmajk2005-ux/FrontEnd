@@ -1,0 +1,83 @@
+.settings{
+    padding:25px;
+    background:#f5f6fa;
+    min-height:100vh;
+}
+
+.settings-header{
+    margin-bottom:25px;
+}
+
+.settings-header h1{
+    color:#333;
+    margin-bottom:5px;
+}
+
+.settings-header p{
+    color:#777;
+}
+
+.settings-form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    max-width:700px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.form-group input:focus{
+    outline:none;
+    border-color:#5B5CEB;
+}
+
+.checkbox-group{
+    margin-bottom:20px;
+}
+
+.checkbox-group label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:500;
+}
+
+.save-settings-btn{
+    background:#5B5CEB;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.save-settings-btn:hover{
+    background:#4748d8;
+}
+
+@media(max-width:768px){
+
+.settings-form{
+    padding:20px;
+}
+
+}
